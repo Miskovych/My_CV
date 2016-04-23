@@ -3,19 +3,33 @@
     <head>
         <title>HW04 </title>
         <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="reset.css" type="text/css" />
         <link rel="stylesheet" href="mainstyle.css" type="text/css" />
+        <link rel="stylesheet" href="fullsize.css" media="(min-width: 701px)" type="text/css" />
+   
+        <link rel="stylesheet" href="mobile.css" media="(max-width: 700px)" type="text/css" />
+        
+    
     </head>
     <body>
+        
         <header>
             <h1>Curriculum vitae</h1> 
             <p>Miskovych Andrii</p>
         </header>
-        <nav>
-            <p>Hello</p>
-            <p>Education</p>
-            <p>Skills</p>
-            <p>Contacts</p>
-            <p>My CV</p>
+        
+        <nav id="mobile">
+            <a href="#hello">Hello</a>
+            <hr>
+            <a href="#education">Education</a>
+            <hr>
+            <a href="#mycv">Skills</a>
+            <hr>
+            <a href="#contacts">Contacts</a>
+            <hr>
+            <a href="#mycv">My CV</a>
         </nav>
         
         <article id="hello">
@@ -24,7 +38,7 @@
         </article>
         
         <article id="mycv">
-            <h2>Download my CV</h2>
+            <h2>Download my CV</h2><br>
             <button>Download</button>
         </article> 
         
@@ -39,9 +53,11 @@
         
         <article id="skills">
             <h2>Skills</h2>
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JavaScript</p>
+            <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            </ul>
         </article>
         
         <article id="contacts">
@@ -52,13 +68,14 @@
                 <label for="name">Name:</label><br>
                 <input id="name" type="text" /><br>
                 <label for="message">Message:</label><br>
-                <textarea id="message" rows="4" cols="50">message</textarea><br>
+                <textarea id="message" rows="4" cols="20">message</textarea><br>
                 <input type="submit" value="Send"/>
             </form>
         </article>
-        
+       
         <footer>
             <p>Drohobych 2016 ©</p>
         </footer>
+        
     </body>
 </html>
