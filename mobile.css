@@ -4,6 +4,7 @@ body{
      flex-flow: row wrap;
     background-color: #E1E6B9;
     font-family: Bree Serif;
+    max-width: 1600px;
 }
 header{
     margin: 5px auto;
