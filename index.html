@@ -2,47 +2,65 @@
 <html lang="en">
     <head>
         <title>HW04 </title>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.5">
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="reset.css" type="text/css" />
-        <link rel="stylesheet" href="mainstyle.css" type="text/css" />
-        <link rel="stylesheet" href="fullsize.css" media="(min-width: 701px)" type="text/css" />
-   
-        <link rel="stylesheet" href="mobile.css" media="(max-width: 700px)" type="text/css" />
-        <script type="text/javascript" src="menuscript.js"></script>
+        <link rel="stylesheet" href="newstyle.css"  media="(min-width:369px)" type="text/css" />
+        <link rel="stylesheet" href="mobile.css"  media="(max-width:370px)" type="text/css" />
+    
+        
+    
     
     </head>
     <body>
         
-        <header>
+        <header id="hid">
+            <img id="ava" src="ava.jpg"></img>
             <h1>Curriculum vitae</h1> 
-            <p>Miskovych Andrii</p>
+            <p id="name">Miskovych Andrii</p>
         </header>
         
-        <nav id="mobile">
-            <a id="hellolink" href="#hello">Hello</a>
-            <hr>
-            <a id="edulink" href="#education">Education</a>
-            <hr>
-            <a id="skillslink" href="#skills">Skills</a>
-            <hr>
-            <a id="conlink" href="#contacts">Contacts</a>
-            <hr>
-            <a id="mcvlink" href="#mycv">My CV</a>
+        <div id="headerspace">
+        <h1>Curriculum vitae</h1> 
+        <p>Miskovych Andrii</p>    
+        </div>
+        <nav id="mobile36">
+            
+                    <a id="hellolink" href="#hello" >Hello</a>
+                    <a id="edulink" href="#education" >Education</a>
+                    <a id="skillslink" href="#skills" >Skills</a>
+                    <a id="conlink" href="#contacts">Contacts</a>
+                    <a id="mcvlink" href="#mycv" >Download</a>
+                    <a id="photolink"  href="#photo">Photo</a>
+                
         </nav>
-        
-        <article id="hello">
+        <nav id="mobile">
+            <table>
+                <tr>
+                    <td><a id="hellolink" href="#hello" >Hello</a></td>
+                    <td><a id="edulink" href="#education" >Education</a></td>
+                    <td><a id="skillslink" href="#skills" >Skills</a></td>
+                    <td><a id="conlink" href="#contacts">Contacts</a></td>
+                    <td><a id="mcvlink" href="#mycv" >Download</a></td>
+                    <td><a id="photolink"  href="#photo">Photo</a></td>
+                </tr>
+            </table>
+        </nav>
+        <section>
+        <article  class="artviev art" id="hello">
             <h2>Hello everyone!</h2>
             <p>My name is Andrii and I am beginner front-end developer.If you are interested to get me better you are welcome to check my site</p>
         </article>
         
-        <article id="mycv">
+        <article class="artviev art" id="mycv">
             <h2>Download my CV</h2><br>
             <button>Download</button>
         </article> 
         
-        <article id="education">
+        <article class="artviev art" id="education">
             <h2>Education</h2>
             <ul>
                 <li>National Aviation University<br>Computerised control systems and automatics</li>
@@ -51,7 +69,7 @@
             </ul>
         </article>
         
-        <article id="skills">
+        <article class="artviev art" id="skills">
             <h2>Skills</h2>
             <ul>
             <li>HTML5</li>
@@ -60,7 +78,7 @@
             </ul>
         </article>
         
-        <article id="contacts">
+        <article class="artviev art" id="contacts">
             <h2>Contacts</h2>
             <form>
                 <label for="email">Email:</label><br>
@@ -72,10 +90,14 @@
                 <input type="submit" value="Send"/>
             </form>
         </article>
-       
-        <footer>
+        
+        <article class="artviev art" id="photo"></article>
+       </section>
+        <footer
             <p>Drohobych 2016 ©</p>
         </footer>
-        
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    
+    <script type="text/javascript" src="menuscript.js"></script>    
     </body>
 </html>

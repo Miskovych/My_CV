@@ -1,46 +1,102 @@
 // JavaScript File
-window.addEventListener("load", init, false);
+$(document).ready(function() {
+    $('.artviev').addClass('art').removeClass('artviev')
+    $('.artviev').show();
+    $("a").click(function(event) {
+        event.preventDefault();
+    });
+    $(window).scroll(function() {
+        var bo = $(this).scrollTop();
 
-function init() {
-    hellolink.addEventListener("click", helloaction, false);
-    edulink.addEventListener("click", eduaction, false);
-    skillslink.addEventListener("click", skillsaction, false);
-    mcvlink.addEventListener("click", mcvaction, false);
-    conlink.addEventListener("click", conaction, false);
-}
-function helloaction(){
-    hello.style.display="block";
-    mycv.style.display="none";
-    education.style.display="none";
-    skills.style.display="none";
-    contacts.style.display="none";
-}
+        if (bo >= 100) {
+            $('#hid').slideUp('100');
+            $('#mobile').css({
+                top: '0px'
+            });
+            $('#headerspace').css({
+                height: '235px'
+            })
 
-function eduaction(){
-    hello.style.display="none";
-    mycv.style.display="none";
-    education.style.display="block";
-    skills.style.display="none";
-    contacts.style.display="none";
-}
-function mcvaction(){
-    hello.style.display="none";
-    mycv.style.display="block";
-    education.style.display="none";
-    skills.style.display="none";
-    contacts.style.display="none";
-}
-function skillsaction(){
-    hello.style.display="none";
-    mycv.style.display="none";
-    education.style.display="none";
-    skills.style.display="block";
-    contacts.style.display="none";
-}
-function conaction(){
-    hello.style.display="none";
-    mycv.style.display="none";
-    education.style.display="none";
-    skills.style.display="none";
-    contacts.style.display="block";
-}
+        };
+        if (bo < 100) {
+            $('#hid').slideDown('fast');
+            $('#mobile').css({
+                top: '169px'
+            });
+            $('#headerspace').css({
+                height: '205px'
+            });
+
+        };
+    })
+
+    $('#hellolink').click(function() {
+        var linkHref = $(this).attr('href');
+        $('.artviev').addClass('.art').removeClass('.artviev');
+        $('.art').hide().removeClass('.art');
+        $(linkHref).addClass('artviev')
+        $(linkHref).show();
+
+
+    })
+
+    $('#edulink').click(function() {
+        var linkHref = $(this).attr('href');
+        $('.artviev').addClass('.art').removeClass('.artviev');
+        $('.art').hide().removeClass('.art');
+        $(linkHref).addClass('artviev')
+        $(linkHref).show();
+
+    })
+
+    $('#skillslink').click(function() {
+        var linkHref = $(this).attr('href');
+        $('.artviev').addClass('.art').removeClass('.artviev');
+        $('.art').hide().removeClass('.art');
+        $(linkHref).addClass('artviev')
+        $(linkHref).show();
+
+    })
+
+    $('#conlink').click(function() {
+        var linkHref = $(this).attr('href');
+        $('.artviev').addClass('.art').removeClass('.artviev');
+        $('.art').hide().removeClass('.art');
+        $(linkHref).addClass('artviev')
+        $(linkHref).show();
+
+    })
+
+    $('#photolink').click(function() {
+        var linkHref = $(this).attr('href');
+        $('.artviev').addClass('.art').removeClass('.artviev');
+        $('.art').hide().removeClass('.art');
+        $(linkHref).addClass('artviev')
+        $(linkHref).show();
+
+    })
+
+    $('#mcvlink').click(function() {
+        var linkHref = $(this).attr('href');
+        $('.artviev').addClass('.art').removeClass('.artviev');
+        $('.art').hide().removeClass('.art');
+        $(linkHref).addClass('artviev')
+        $(linkHref).show();
+
+    })
+
+    $('article').click(function() {
+      
+        $('.artviev').addClass('.art').removeClass('.artviev');
+        $('.art').hide().removeClass('.art');
+        $(this).addClass('artviev')
+        $(this).show();
+    })
+    $('header').click(function(){
+      
+    
+    $('.art').show();
+    $('.artviev').addClass('art').removeClass('artviev')
+    }
+        )
+})

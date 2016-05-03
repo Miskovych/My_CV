@@ -4,7 +4,17 @@ body{
      flex-flow: row wrap;
     background-color: #E1E6B9;
     font-family: Bree Serif;
-    max-width: 1600px;
+    
+}
+img{
+    display: none;
+    
+}
+#headerspace{
+    display: none;
+}
+#mobile{
+    display: none;
 }
 header{
     margin: 5px auto;
@@ -35,7 +45,7 @@ header p{
     font-style: italic;
     
 }
-#mobile {
+#mobile36 {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 300px;

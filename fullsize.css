@@ -7,10 +7,11 @@ body{
     flex-flow: row wrap;
     background-color: #FFFCE2;
     font-family: Bree Serif;
+    max-width: 1600px;
 }
 
 header{
-    
+    position: fixed;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #122430;
