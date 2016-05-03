@@ -40,7 +40,7 @@ header {
     height: 205px;
 }
 
-nav {
+#mobile {
     padding: 0;
     position: fixed;
     top: 169px;

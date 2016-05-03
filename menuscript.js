@@ -15,9 +15,9 @@ $(document).ready(function() {
             });
             $('#headerspace').css({
                 height: '235px'
-            })
+            });
 
-        };
+        }
         if (bo < 100) {
             $('#hid').slideDown('fast');
             $('#mobile').css({
@@ -27,76 +27,73 @@ $(document).ready(function() {
                 height: '205px'
             });
 
-        };
-    })
+        }
+    });
 
     $('#hellolink').click(function() {
         var linkHref = $(this).attr('href');
         $('.artviev').addClass('.art').removeClass('.artviev');
         $('.art').hide().removeClass('.art');
-        $(linkHref).addClass('artviev')
+        $(linkHref).addClass('artviev');
         $(linkHref).show();
 
-
-    })
+    });
 
     $('#edulink').click(function() {
         var linkHref = $(this).attr('href');
         $('.artviev').addClass('.art').removeClass('.artviev');
         $('.art').hide().removeClass('.art');
-        $(linkHref).addClass('artviev')
+        $(linkHref).addClass('artviev');
         $(linkHref).show();
 
-    })
+    });
 
     $('#skillslink').click(function() {
         var linkHref = $(this).attr('href');
         $('.artviev').addClass('.art').removeClass('.artviev');
         $('.art').hide().removeClass('.art');
-        $(linkHref).addClass('artviev')
+        $(linkHref).addClass('artviev');
         $(linkHref).show();
 
-    })
+    });
 
     $('#conlink').click(function() {
         var linkHref = $(this).attr('href');
         $('.artviev').addClass('.art').removeClass('.artviev');
         $('.art').hide().removeClass('.art');
-        $(linkHref).addClass('artviev')
+        $(linkHref).addClass('artviev');
         $(linkHref).show();
 
-    })
+    });
 
     $('#photolink').click(function() {
         var linkHref = $(this).attr('href');
         $('.artviev').addClass('.art').removeClass('.artviev');
         $('.art').hide().removeClass('.art');
-        $(linkHref).addClass('artviev')
+        $(linkHref).addClass('artviev');
         $(linkHref).show();
 
-    })
+    });
 
     $('#mcvlink').click(function() {
         var linkHref = $(this).attr('href');
         $('.artviev').addClass('.art').removeClass('.artviev');
         $('.art').hide().removeClass('.art');
-        $(linkHref).addClass('artviev')
+        $(linkHref).addClass('artviev');
         $(linkHref).show();
 
-    })
+    });
 
     $('article').click(function() {
       
         $('.artviev').addClass('.art').removeClass('.artviev');
         $('.art').hide().removeClass('.art');
-        $(this).addClass('artviev')
+        $(this).addClass('artviev');
         $(this).show();
-    })
+    });
     $('header').click(function(){
-      
-    
     $('.art').show();
-    $('.artviev').addClass('art').removeClass('artviev')
+    $('.artviev').addClass('art').removeClass('artviev');
     }
-        )
+        );
 })
