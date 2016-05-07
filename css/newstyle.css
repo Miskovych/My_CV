@@ -11,15 +11,30 @@ body {
     display:flex;
     flex-wrap: wrap;
 }
+.hells{
+   display:flex;
+    flex-wrap: nowrap; 
+}
 
 .foto{
-    max-width: 300px;
+width: 33%;
+margin: 0;
+}
+#hfoto{
+    width: 30%;
+}
+#phelo{
+    width: 30%;
 }
 
 img{
     width: 30%;
     height: 30%;
     margin-top: 20px;
+    
+}
+
+#phello{
     
 }
 
