@@ -1,103 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>HW04 </title>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.5">
-        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="reset.css" type="text/css" />
-        <link rel="stylesheet" href="newstyle.css"  media="(min-width:369px)" type="text/css" />
-        <link rel="stylesheet" href="mobile.css"  media="(max-width:370px)" type="text/css" />
+
+<head>
+    <title>HW04 </title>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/newstyle.css" media="(min-width:369px)" type="text/css" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width:370px)" type="text/css" />
+</head>
+
+<body background="img/backg.jpg">
+
+    <header id="hid">
+        <h1>Curriculum vitae</h1>
+        <p id="nameh">Miskovych Andrii</p>
+    </header>
     
-        
+    <div id="headerspace">
+        <h1>Curriculum vitae</h1>
+        <p>Miskovych Andrii</p>
+    </div>
     
+    <div id="mobile36">
+
+        <a id="hellol" href="#hello">Hello</a>
+        <a id="edul" href="#education">Education</a>
+        <a id="skillsl" href="#skills">Skills</a>
+        <a id="conl" href="#contacts">Contacts</a>
+        <a id="mcvl" href="#mycv">Download</a>
+        <a id="photol" href="#photo">Photo</a>
+
+    </div>
     
-    </head>
-    <body>
+    <nav id="mobile">
+        <table>
+            <tr>
+                <td><a id="hellolink" href="#hello">Hello</a></td>
+                <td><a id="edulink" href="#education">Education</a></td>
+                <td><a id="skillslink" href="#skills">Skills</a></td>
+                <td><a id="conlink" href="#contacts">Contacts</a></td>
+                <td><a id="mcvlink" href="#mycv">Download</a></td>
+                <td><a id="photolink" href="#photo">Photo</a></td>
+            </tr>
+        </table>
+    </nav>
+    
+    <section>
         
-        <header id="hid">
-           <!-- <img id="ava" src="ava.jpg"></img>-->
-            <h1>Curriculum vitae</h1> 
-            <p id="name">Miskovych Andrii</p>
-        </header>
-        
-        <div id="headerspace">
-        <h1>Curriculum vitae</h1> 
-        <p>Miskovych Andrii</p>    
-        </div>
-        <div id="mobile36">
-            
-                    <a id="hellol" href="#hello" >Hello</a>
-                    <a id="edul" href="#education" >Education</a>
-                    <a id="skillsl" href="#skills" >Skills</a>
-                    <a id="conl" href="#contacts">Contacts</a>
-                    <a id="mcvl" href="#mycv" >Download</a>
-                    <a id="photol"  href="#photo">Photo</a>
-                
-        </div>
-        <nav id="mobile">
-            <table>
-                <tr>
-                    <td><a id="hellolink" href="#hello" >Hello</a></td>
-                    <td><a id="edulink" href="#education" >Education</a></td>
-                    <td><a id="skillslink" href="#skills" >Skills</a></td>
-                    <td><a id="conlink" href="#contacts">Contacts</a></td>
-                    <td><a id="mcvlink" href="#mycv" >Download</a></td>
-                    <td><a id="photolink"  href="#photo">Photo</a></td>
-                </tr>
-            </table>
-        </nav>
-        <section>
-        <article  class="artviev art" id="hello">
+        <article class="artviev art" id="hello">
             <h2>Hello everyone!</h2>
-            <p>My name is Andrii and I am beginner front-end developer.If you are interested to get me better you are welcome to check my site</p>
+            <div class="hell">
+                <img id="foto" alt="foto" src="img/1.jpg">
+                <p>My name is Andrii and I am beginner front-end developer. If you are interested to get me better you are welcome to check my site. I consider myself as a self-demanding capable to produce good results in a limited time. I am responsible,
+                    attentive to details and a good team worker. My aim has always been to produce websites that look beautiful and professional, are highly functional, load quickly.If this is what you want, then get in touch with me.</p>
+            </div>
         </article>
-        
+
         <article class="artviev art" id="mycv">
-            <h2>Download my CV</h2><br>
-            <button>Download</button>
-        </article> 
-        
+            <h2>Download my CV</h2>
+            <br>
+            <div id="fldmcv">
+                <img src="img/file.png" alt="file" id="fileimg">
+                <p id="imgfiletex">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>My name is Andrii and I am beginner front-end developer. If you are interested to get me better you are welcome to check my resume:
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="button" style="vertical-align:middle"><span>Download</span></button>
+                </p>
+            </div>
+
+        </article>
+
         <article class="artviev art" id="education">
             <h2>Education</h2>
-            <ul>
-                <li>National Aviation University<br>Computerised control systems and automatics</li>
-                <li>VPU-19 of Drohobych</li>
-                <li>School #2 of Drohobych</li>
-            </ul>
+            <div class="hell">
+                <img id="edim" src="img/edu.png" alt="edu">
+                <ul>
+                    <li>National Aviation University
+                        <br>Computerised control systems and automatics</li>
+                    <li>VPU-19 of Drohobych</li>
+                    <li>School #2 of Drohobych</li>
+                </ul>
+            </div>
         </article>
-        
+
         <article class="artviev art" id="skills">
             <h2>Skills</h2>
-            <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            </ul>
+            <div class="hell">
+                <img src="img/skills.png" alt="skills">
+                <ul>
+                    <li>HTML5
+                        <br>
+                        <svg id="fillgauge1" width="97%" height="100px"></svg>
+                    </li>
+                    <li>CSS3
+                        <br>
+                        <svg id="fillgauge2" width="97%" height="100px"></svg>
+                    </li>
+                    <li>JavaScript
+                        <br>
+                        <svg id="fillgauge3" width="97%" height="100px"></svg>
+                    </li>
+                </ul>
+            </div>
         </article>
-        
+
         <article class="artviev art" id="contacts">
             <h2>Contacts</h2>
-            <form>
-                <label for="email">Email:</label><br>
-                <input id="email" type="email"/><br>
-                <label for="name">Name:</label><br>
-                <input id="name" type="text" /><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" rows="4" cols="20">message</textarea><br>
-                <input type="submit" value="Send"/>
-            </form>
+            <div class="hell">
+                <div id="container">
+                    <h2>Contact me</h2>
+                    <form id="conform">
+                        <input type="text" id="name" name="field1" placeholder="Your Name" />
+                        <input type="email" id="email" name="field2" placeholder="Email Address" />
+                        <textarea name="field3" id="msg" placeholder="Type your Message"></textarea>
+                    </form>
+                    <button id="btn-send">
+                        Send
+                    </button>
+                </div>
+                <div>
+                    <h2>My contacts</h2>
+                    <ul>
+                        <li>Phone: +380932743765</li>
+                        <li>Email: Andrinau3@gmail.com</li>
+                        <li>Address: Drohobych, Voronoho Str.11</li>
+                    </ul>
+                </div>
+            </div>
         </article>
-        
-        <article class="artviev art" id="photo"></article>
-       </section>
-        <footer
-            <p>Drohobych 2016 ©</p>
-        </footer>
-    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+
+        <article class="artviev art" id="photo">
+            <h2>Photo</h2>
+            <div class="hell">
+                <img class="foto" alt="foto" src="img/2.jpg">
+                <img class="foto" alt="foto" src="img/3.jpg">
+                <img class="foto" alt="foto" src="img/6.jpg">
+                <img class="foto" alt="foto" src="img/1.jpg">
+                <img class="foto" alt="foto" src="img/5.jpg">
+                <img class="foto" alt="foto" src="img/4.jpg">
+            </div>    
+        </article>
+
+    </section>
     
-    <script type="text/javascript" src="menuscript.js"></script>    
-    </body>
+    <footer>
+        <p>Drohobych 2016 ©</p>
+    </footer>
+    
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="js/liquidFillGauge.js" language="JavaScript"></script>
+    <script type="text/javascript" src="js/menuscript.js"></script>
+    <script type="text/javascript" src="js/diagram.js"></script>
+</body>
+
 </html>
